@@ -1,0 +1,107 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #d2d2d2;
+  padding: 1%;
+  margin-top: 5%;
+  border-radius: 2%;
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 45vw;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  outline: 0;
+  font-size: 16px;
+  color: #212121;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+}
+.form__label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.form__field:focus ~ .form__label {
+  color: #009788;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #009788;
+}
+
+.fileInputBox {
+  margin-top: 5%;
+}
+
+.fileLabel {
+  border: 2px dashed #b1afaf;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.fileSupported {
+  font-size: 0.8rem;
+}
+.submit {
+  margin-top: 3%;
+  background: #009788;
+  color: white;
+  font-size: large;
+  outline: none;
+  border: none;
+  width: 20vw;
+  border-radius: 10px;
+  padding: 2%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+.submit:active {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .formContainer {
+    width: 95vw;
+  }
+  .form__group {
+    width: 100%;
+  }
+  .submit {
+    width: 50vw;
+  }
+}

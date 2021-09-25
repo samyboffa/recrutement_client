@@ -1,0 +1,98 @@
+.container {
+  width: 80vw;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typeBox {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+}
+.type {
+  color: #3f78e0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+.type:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3f78e0;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+.type:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.title {
+  width: 40vw;
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+}
+
+.infoTitle {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  gap: 10%;
+}
+.infoTitle {
+  color: rgb(150, 150, 150);
+  fill: rgb(150, 150, 150);
+  font-size: 0.8rem;
+  display: flex;
+  gap: 20%;
+  margin: auto auto 7% auto;
+}
+.infoTitle p {
+  display: flex;
+  align-items: center;
+}
+.svg {
+  display: inline-block;
+  margin-right: 5px;
+}
+.imageBlock {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+  width: 60vw;
+  margin-top: 3%;
+}
+.images {
+  margin-top: 1%;
+}
+.imagesInside {
+  border-radius: 2%;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.imagesInside:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+  }
+  .title {
+    width: 95vw;
+  }
+  .infoTitle {
+    width: 95vw;
+  }
+}

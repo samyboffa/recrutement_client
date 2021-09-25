@@ -1,0 +1,75 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  margin-top: 2%;
+}
+.cardImage:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+.cardImage {
+  border-radius: 3% 3% 0 0;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.title {
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.title:hover {
+  color: #3f78e0;
+}
+.typeBox {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+}
+.type {
+  color: #3f78e0;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+.type:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3f78e0;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+.type:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.description {
+  margin: auto 5%;
+}
+.introduction {
+  width: 450px;
+  color: rgb(104, 104, 104);
+}
+.footer {
+  color: rgb(150, 150, 150);
+  fill: rgb(150, 150, 150);
+  font-size: 0.8rem;
+  display: flex;
+  gap: 20%;
+  margin: auto 5%;
+}
+.footer p {
+  display: flex;
+  align-items: center;
+}
+.svg {
+  display: inline-block;
+  margin-right: 5px;
+}

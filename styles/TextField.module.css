@@ -1,0 +1,14 @@
+.container {
+  width: 50vw;
+  margin-top: 3%;
+}
+.container p {
+  font-size: 1.1em;
+  color: rgb(109, 109, 109);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95vw;
+  }
+}

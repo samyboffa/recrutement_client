@@ -84,6 +84,17 @@
   padding: 2%;
   transition: all 0.2s ease;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success {
+  color: #009788;
+  font-size: 0.8em;
+}
+.error {
+  color: #971e00;
+  font-size: 0.8em;
 }
 
 .submit:hover {

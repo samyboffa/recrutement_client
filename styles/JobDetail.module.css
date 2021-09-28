@@ -84,6 +84,12 @@
 .imagesInside:hover {
   transform: scale(1.05);
 }
+.jobDescription {
+  width: 50vw;
+  margin-top: 3%;
+  font-size: 1.1em;
+  color: rgb(109, 109, 109);
+}
 
 @media only screen and (max-width: 768px) {
   .container {
@@ -93,6 +99,9 @@
     width: 95vw;
   }
   .infoTitle {
+    width: 95vw;
+  }
+  .jobDescription {
     width: 95vw;
   }
 }
